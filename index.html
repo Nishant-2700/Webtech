@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Showcase</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+    body { background: #f4f6f8; padding: 30px; }
+    h1 { text-align: center; margin-bottom: 30px; color: #333; }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    table { width: 100%; border-collapse: collapse; }
+    th { background: #2563eb; color: white; padding: 15px; font-size: 18px; }
+    td { padding: 15px; vertical-align: top; border-bottom: 1px solid #ddd; }
+
+    .product-img {
+      width: 160px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .product-img:hover { transform: scale(1.08); }
+
+    ul { padding-left: 18px; }
+    li { margin-bottom: 6px; }
+
+    @media (max-width: 700px) {
+      table, thead, tbody, th, td, tr { display: block; }
+      th { text-align: center; }
+      td { border: none; border-bottom: 1px solid #ddd; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Product Images & Details</h1>
+
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="img1lap.jpg" alt="Laptop" class="product-img"></td>
+        <td>
+          <ul>
+            <li><strong>Laptop</strong></li>
+            <li>Intel i5 Processor</li>
+            <li>8 GB RAM</li>
+            <li>512 GB SSD</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="img2phone.webp" alt="Smartphone" class="product-img"></td>
+        <td>
+          <ul>
+            <li><strong>Smartphone</strong></li>
+            <li>6 GB RAM</li>
+            <li>128 GB Storage</li>
+            <li>5000 mAh Battery</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="img3head.avif" alt="Wireless Headphones" class="product-img"></td>
+        <td>
+          <ul>
+            <li><strong>Wireless Headphones</strong></li>
+            <li>Bluetooth Connectivity</li>
+            <li>Noise Cancellation</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
